@@ -20,5 +20,9 @@
         "psr-4":{ 
             "OpenTelemetry\\Contrib\\Instrumentation\\Laravel\\": "src"
         }
+    },
+    "config": {
+        "mini-stable": true,
+        "version": "1.0.0"
     }
 }
