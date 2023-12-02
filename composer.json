@@ -6,7 +6,9 @@
     "require": {
         "open-telemetry/exporter-otlp": "^1.0",
         "open-telemetry/sdk": "^1.0",
-        "open-telemetry/transport-grpc": "^1.0"
+        "open-telemetry/transport-grpc": "^1.0",
+        "symfony/http-client": "^7.0",
+        "nyholm/psr7": "^1.8"
     },
     "authors": [
         {
@@ -24,6 +26,9 @@
     },
     "config": {
         "mini-stable": true,
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
