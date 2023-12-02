@@ -1,0 +1,1 @@
+# opentelemetry-auto-laravel-signoz
