@@ -6,8 +6,7 @@
     "require": {
         "open-telemetry/exporter-otlp": "1.0",
         "open-telemetry/sdk": "1.0",
-        "open-telemetry/transport-grpc": "1.0",
-        "topkee-media/opentelemetry-auto-laravel-signoz": "dev-main"
+        "open-telemetry/transport-grpc": "1.0"
     },
     "authors": [
         {
