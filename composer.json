@@ -15,7 +15,7 @@
     ],
     "autoload":{
         "files":[
-            "src/_require.php"
+            "src/_register.php"
         ],
         "psr-4":{ 
             "OpenTelemetry\\Contrib\\Instrumentation\\Laravel\\": "src"
