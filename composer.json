@@ -1,34 +1,35 @@
 {
-    "name": "topkee-media/opentelemetry-auto-laravel-signoz",
-    "description": "this is a laravel opentelemetry for signoz",
-    "type": "library",
-    "license": "MIT",
-    "require": {
-        "open-telemetry/exporter-otlp": "^1.0",
-        "open-telemetry/sdk": "^1.0",
-        "open-telemetry/transport-grpc": "^1.0",
-        "symfony/http-client": "^7.0",
-        "nyholm/psr7": "^1.8"
-    },
-    "authors": [
-        {
-            "name": "sherlockliu",
-            "email": "hancock.liu@gmail.com"
-        }
-    ],
-    "autoload":{
-        "files":[
-            "src/_register.php"
-        ],
-        "psr-4":{ 
-            "OpenTelemetry\\Contrib\\Instrumentation\\Laravel\\": "src"
-        }
-    },
-    "config": {
-        "mini-stable": true,
-        "version": "1.0.0",
-        "allow-plugins": {
-            "php-http/discovery": true
-        }
+  "name": "topkee-media/opentelemetry-auto-laravel-signoz",
+  "description": "this is a laravel opentelemetry for signoz",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "^8.40",
+    "nyholm/psr7": "^1.8",
+    "open-telemetry/exporter-otlp": "^1.0",
+    "open-telemetry/sdk": "^1.0",
+    "open-telemetry/transport-grpc": "^1.0",
+    "symfony/http-client": "v6.0.*"
+  },
+  "authors": [
+    {
+      "name": "sherlockliu",
+      "email": "hancock.liu@gmail.com"
     }
+  ],
+  "autoload": {
+    "files": [
+      "src/_register.php"
+    ],
+    "psr-4": {
+      "OpenTelemetry\\Contrib\\Instrumentation\\Laravel\\": "src"
+    }
+  },
+  "config": {
+    "mini-stable": true,
+    "version": "1.0.0",
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
 }
