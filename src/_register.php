@@ -6,7 +6,7 @@ use OpenTelemetry\Contrib\Instrumentation\Laravel\LaravelInstrumentation;
 use OpenTelemetry\SDK\Sdk;
 
 // 加载环境变量
-$dotenv = Dotenv\Dotenv::createImmutable(getcwd() . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
+$dotenv = Dotenv\Dotenv::createMutable(getcwd());
 $env    = $dotenv->safeLoad();
 
 // 检测是否启用
