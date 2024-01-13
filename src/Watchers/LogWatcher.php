@@ -29,6 +29,13 @@ class LogWatcher extends Watcher
         $attributes['context'] = json_encode(array_filter($log->context));
 
         $message = $log->message;
+        if (!is_string($message)) {
+            if (is_numeric($message)) {
+                $message = (string)$message;
+            } else {
+                $message = json_encode($message);
+            }
+        }
 
         $scope = Context::storage()->scope();
         if (!$scope) {
