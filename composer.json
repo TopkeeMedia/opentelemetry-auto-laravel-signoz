@@ -7,7 +7,7 @@
     "laravel/framework": "^8.40",
     "nyholm/psr7": "^1.8",
     "open-telemetry/exporter-otlp": "^1.0",
-    "open-telemetry/sdk": "^1.0",
+    "open-telemetry/sdk": "1.0.5",
     "open-telemetry/transport-grpc": "^1.0",
     "symfony/http-client": "v6.0.*"
   },
